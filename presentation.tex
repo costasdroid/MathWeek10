@@ -1,0 +1,166 @@
+\documentclass[greek]{beamer}
+%\usepackage{fontspec}
+%\newtheorem{definition}{Ορισμός}
+\usepackage{amsmath,amsthm}
+\usepackage{unicode-math}
+\usepackage{xltxtra}
+\usepackage{graphicx}
+\usetheme{Warsaw}
+\usecolortheme{seahorse}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{xgreek}
+\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen}
+%\setbeameroption{show only notes}
+
+\setsansfont{Times New Roman}
+\title[Αντιπαράδειγμα, Αντιθετοαντιστροφή και γράφημα]{Αντιπαράδειγμα, Αντιθετοαντιστροφή και γράφημα στη διδασκαλία της ανάλυσης Γ΄ λυκείου}
+\author[Ελευθεριάδης, Λόλας, Ευαγγελόπουλος]{Μ. Ελευθεριάδης\inst{1} \and Κ. Λόλας\inst{2} \and Α. Ευαγγελόπουλος\inst{3}}
+\institute[]
+{
+  \inst{1}%
+  32ο ΓΕΛ ΘΕΣ/ΝΙΚΗΣ (ΠΕ03)
+  \and
+  \inst{2}%
+  10ο ΓΕΛ ΘΕΣ/ΝΙΚΗΣ (ΠΕ03)
+  \and
+  \inst{3}%
+  Σχ. Σύμβουλος Μαθηματικών
+}
+\date{Θεσσαλονίκη, Απρίλιος 2018}
+
+\newtheorem{proposition}[theorem]{Πρόταση}
+
+\begin{document}
+\begin{frame}
+ \titlepage
+\end{frame}
+
+\section{Εισαγωγή}
+\begin{frame}{Μαθητές}
+ \begin{itemize}
+  \item<1-> Συμμετέχουν στη παράδοση
+  \item<2-> Λύνουν ασκήσεις
+  \item<3-> Ξαναλύνουν ασκήσεις
+  \item<4-> Ξαναξαναλύνουν ασκήσεις ...
+ \end{itemize}
+\end{frame}
+
+\section{Θεωρία}
+\begin{frame}{Εργαλεία για τη Θεωρία}
+ \begin{itemize}
+  \item<1-> Αντιπαράδειγμα
+  \item<2-> Αντιθετο-αντιστροφή
+  \item<3-> Γραφική Αναπαράσταση
+ \end{itemize}
+\end{frame}
+
+\subsection{Αντιπαράδειγμα}
+\begin{frame}{Αντιπαραδείγματα}
+ \begin{center}
+  \begin{block}{Χρησιμότητα}
+   Ένα παράδειγμα είναι ικανό να αποδείξουμε ότι η πρόταση είναι ψευδής
+  \end{block}
+ \end{center}
+ \begin{itemize}
+  \item παράδειγμα μεταστροφής
+  \item παράδειγμα γεφύρωσης
+ \end{itemize}
+\end{frame}
+
+\subsection{Αντιθετοαντιστροφή}
+\begin{frame}{Αντιθετο-αντιστροφή}
+ \begin{center}
+  \begin{block}{Χρησιμότητα}
+   Ίσως η απόδειξη είναι ευκολότερη από την αρχική
+  \end{block}
+ \end{center}
+\end{frame}
+
+\section{Παραδείγματα}
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν η $f$ συνεχής τότε η $f^{-1}$ δεν είναι πάντα συνεχής.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    x,   & x\in \left[ 0,1 \right] \\
+    x-1, & x\in \left( 2,3 \right) \\
+   \end{array} \right.$ είναι συνεχής ενώ η ${{f}^{-1}}\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    x,   & x\in \left[ 0,1 \right] \\
+    x+1, & x\in \left( 1,2 \right) \\
+   \end{array} \right.$ δεν είναι συνεχής στο $1$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν η $f$ παραγωγίσιμη, τότε η $f^{-1}$ δεν είναι πάντα παραγωγίσιμη.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)={{x}^{3}}$ είναι «1-1» και παραγωγίσιμη στο $\mathbb{R}$. Όμως η ${{f}^{-1}}\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \sqrt[3]{x},   & x\ge 0 \\
+    -\sqrt[3]{-x}, & x<0    \\
+   \end{array} \right.$ δεν είναι παραγωγίσιμη στο 0.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν υπάρχει το όριο $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\left[ f\left( x \right)+g\left( x \right) \right]$, τότε δεν υπάρχουν πάντα τα όρια $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f\left( x \right)$ και $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,g\left( x \right)$.
+ \end{proposition}
+ \begin{proof}
+  Για $f\left( x \right)=\frac{1}{{{x}^{2}}}$ και $g\left( x \right)=-\frac{1}{{{x}^{2}}}$ τότε $\underset{x\to 0}{\mathop{\lim }}\,\left[ f\left( x \right)+g\left( x \right) \right]=0$ και $\underset{x\to 0}{\mathop{\lim }}\,f\left( x \right)=+\infty $.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν $\underset{x\to +\infty }{\mathop{\lim }}\,f\left( x \right)=+\infty $, τότε η $f$ δεν είναι πάντα γνησίως αύξουσα στο $+\infty $.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\eta \mu x+x$ έχει $\underset{x\to +\infty }{\mathop{\lim }}\,f\left( x \right)=+\infty $, όμως δεν είναι γνησίως αύξουσα στο $+\infty $.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν η $f$ είναι συνεχής στο ${{x}_{0}}$, τότε η $f$ δεν είναι πάντα παραγωγίσιμη στο ${{x}_{0}}$.
+ \end{proposition}
+ \begin{proof}
+   Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+      \ln x+1, & x>1  \\
+      -{{x}^{2}}+2, & x\le 1  \\
+   \end{array} \right.$ είναι συνεχής στο $1$, όμως δεν είναι παραγωγίσιμη στο $1$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν η ${{C}_{f}}$ δέχεται εφαπτομένη $\varepsilon $ στο ${{x}_{0}}$, τότε η $\varepsilon $ δεν έχει πάντα μόνο ένα κοινό σημείο με την ${{C}_{f}}$ (άσκηση Γ10, σελ. 174-175).
+ \end{proposition}
+ \begin{proof}
+   Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+      {{x}^{2}}\eta \mu \frac{1}{x}, & x\ne 0  \\
+      0, & x=0  \\
+   \end{array} \right.$ είναι παραγωγίσιμη στο $0$ και έχει εφαπτόμενη την $\varepsilon :y=0$ (άξονας $x'x$) που τέμνει την ${{C}_{f}}$ σε άπειρα σημεία (${{x}_{k}}=\frac{1}{k\pi }$, $k\in {{\mathbb{Z}}^{*}}$) παρόλο που εφάπτεται της ${{C}_{f}}$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση}
+ \begin{proposition}
+  \normalfont Αν η $f+g$ είναι παραγωγίσιμη στο${{x}_{0}}$, τότε οι $f$, $g$ δεν είναι πάντα παραγωγίσιμες στο ${{x}_{0}}$.
+ \end{proposition}
+ \begin{proof}
+  H συνάρτηση $\left( f+g \right)\left( x \right)=x+1$ είναι παραγωγίσιμη στο $0$, ενώ οι συναρτήσεις $f\left( x \right)=x+\left| x \right|$ και $g\left( x \right)=1-\left| x \right|$ δεν είναι παραγωγίσιμες στο $0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}[plain,c]
+ \begin{center}
+  \Huge Σας Ευχαριστούμε...
+ \end{center}
+\end{frame}
+
+\end{document}

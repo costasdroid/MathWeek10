@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Εισαγωγή}{2}{0}{1}
+\beamer@sectionintoc {2}{Θεωρία}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Αντιπαράδειγμα}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Αντιθετοαντιστροφή}{10}{0}{2}
+\beamer@sectionintoc {3}{Παραδείγματα}{11}{0}{3}
