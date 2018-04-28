@@ -79,7 +79,7 @@
 \end{frame}
 
 \section{Παραδείγματα}
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 1}
  \begin{proposition}
   \normalfont Αν η $f$ συνεχής τότε η $f^{-1}$ δεν είναι πάντα συνεχής.
  \end{proposition}
@@ -94,7 +94,7 @@
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 2}
  \begin{proposition}
   \normalfont Αν η $f$ παραγωγίσιμη, τότε η $f^{-1}$ δεν είναι πάντα παραγωγίσιμη.
  \end{proposition}
@@ -106,7 +106,7 @@
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 3}
  \begin{proposition}
   \normalfont Αν υπάρχει το όριο $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\left[ f\left( x \right)+g\left( x \right) \right]$, τότε δεν υπάρχουν πάντα τα όρια $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f\left( x \right)$ και $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,g\left( x \right)$.
  \end{proposition}
@@ -115,7 +115,7 @@
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 4}
  \begin{proposition}
   \normalfont Αν $\underset{x\to +\infty }{\mathop{\lim }}\,f\left( x \right)=+\infty $, τότε η $f$ δεν είναι πάντα γνησίως αύξουσα στο $+\infty $.
  \end{proposition}
@@ -124,36 +124,270 @@
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 5}
  \begin{proposition}
   \normalfont Αν η $f$ είναι συνεχής στο ${{x}_{0}}$, τότε η $f$ δεν είναι πάντα παραγωγίσιμη στο ${{x}_{0}}$.
  \end{proposition}
  \begin{proof}
-   Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
-      \ln x+1, & x>1  \\
-      -{{x}^{2}}+2, & x\le 1  \\
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \ln x+1,      & x>1    \\
+    -{{x}^{2}}+2, & x\le 1 \\
    \end{array} \right.$ είναι συνεχής στο $1$, όμως δεν είναι παραγωγίσιμη στο $1$.
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 6}
+ \begin{proposition}
+  \normalfont Αν η $f$είναι συνεχής και $f(x)\ne 0$ για κάθε $x\in (\alpha ,\beta )\cup (\beta ,\gamma )$, τότε δεν έχει πάντα σταθερό πρόσημο στο  $(\alpha ,\beta )\cup (\beta ,\gamma )$
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    {{x}^{2}}+1, & x>1 \\
+    -2,          & x<1 \\
+   \end{array} \right.$είναι συνεχής όμως δεν έχει σταθερό πρόσημο στο $(-\infty ,1)\cup (1,+\infty )$.
+
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 7}
  \begin{proposition}
   \normalfont Αν η ${{C}_{f}}$ δέχεται εφαπτομένη $\varepsilon $ στο ${{x}_{0}}$, τότε η $\varepsilon $ δεν έχει πάντα μόνο ένα κοινό σημείο με την ${{C}_{f}}$ (άσκηση Γ10, σελ. 174-175).
  \end{proposition}
  \begin{proof}
-   Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
-      {{x}^{2}}\eta \mu \frac{1}{x}, & x\ne 0  \\
-      0, & x=0  \\
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    {{x}^{2}}\eta \mu \frac{1}{x}, & x\ne 0 \\
+    0,                             & x=0    \\
    \end{array} \right.$ είναι παραγωγίσιμη στο $0$ και έχει εφαπτόμενη την $\varepsilon :y=0$ (άξονας $x'x$) που τέμνει την ${{C}_{f}}$ σε άπειρα σημεία (${{x}_{k}}=\frac{1}{k\pi }$, $k\in {{\mathbb{Z}}^{*}}$) παρόλο που εφάπτεται της ${{C}_{f}}$.
  \end{proof}
 \end{frame}
 
-\begin{frame}{Πρόταση}
+\begin{frame}{Πρόταση 8}
  \begin{proposition}
   \normalfont Αν η $f+g$ είναι παραγωγίσιμη στο${{x}_{0}}$, τότε οι $f$, $g$ δεν είναι πάντα παραγωγίσιμες στο ${{x}_{0}}$.
  \end{proposition}
  \begin{proof}
   H συνάρτηση $\left( f+g \right)\left( x \right)=x+1$ είναι παραγωγίσιμη στο $0$, ενώ οι συναρτήσεις $f\left( x \right)=x+\left| x \right|$ και $g\left( x \right)=1-\left| x \right|$ δεν είναι παραγωγίσιμες στο $0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 9}
+ \begin{proposition}
+  \normalfont Aν συνάρτηση $f$ είναι ορισμένη και συνεχής στο $\left[ \alpha ,\beta  \right)$ δεν παρουσιάζει πάντα ακρότατο στο $\alpha $.
+ \end{proposition}
+ \begin{proof}
+  H συνάρτηση ${{f}^{-1}}\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    {{x}^{2}}\eta \mu \frac{1}{x}, & x\ne 0 \\      0, & x=0  \\
+   \end{array} \right.$ είναι συνεχής ως γινόμενο συνεχών και σύνθετη συνεχών και στο $0$ είναι συνεχής, $\underset{x\to 0}{\mathop{\lim }}\,\left( {{x}^{2}}\eta \mu \frac{1}{x} \right)=0=f\left( 0 \right)$. Το $f\left( 0 \right)$ δεν είναι τοπικό ακρότατο, γιατί όσο κοντά στο $0$, σε διάστημα της μορφής
+  $\left[ 0,x \right]$ η $f\left( x \right)$ «αλλάζει» πρόσημο.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 10}
+ \begin{proposition}
+  \normalfont Aν η συνάρτηση $f$ είναι ορισμένη στο $\left[ \alpha ,\beta  \right]$, δεν είναι συνεχής στο ${{x}_{0}}\in \left( \alpha ,\beta  \right)$ και αλλάζει το πρόσημο της $f'$ εκατέρωθεν του ${{x}_{0}}$, τότε δεν παρουσιάζει πάντα ακρότατο στο ${{x}_{0}}$.
+ \end{proposition}
+ \begin{proof}
+  H συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \sqrt{-x},   & x<0    \\
+    {{x}^{2}}+1, & x\ge 0 \\
+   \end{array} \right.$ δεν είναι συνεχής στο $0$. Είναι γνησίως φθίνουσα στο $\left( -\infty ,0 \right)$ και γνησίως αύξουσα στο $\left( 0,+\infty  \right)$, όμως δε παρουσιάζει τ. ακρότατο στο $0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 11}
+ \begin{proposition}
+  \normalfont Αν η ${{C}_{f}}$ μιας συνάρτησης $f$, αλλάζει κυρτότητα εκατέρωθεν του ${{x}_{0}}$, τότε δεν παρουσιάζει πάντα στο ${{x}_{0}}$ σημείο καμπής.
+ \end{proposition}
+ \begin{proof}
+  Έστω η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \sqrt{-x}, & x<0    \\
+    {{x}^{2}}, & x\ge 0 \\
+   \end{array} \right.$. Στο ${{x}_{0}}=0$ η κυρτότητα αλλάζει είδος, αφού $f''\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \frac{1}{4x\sqrt{-x}}, & x<0    \\
+    2,                     & x\ge 0 \\
+   \end{array} \right.$ (δεν υπάρχει η $f''\left( 0 \right)$, αφού δεν υπάρχει και η $f'\left( 0 \right)$) και $f''\left( 0 \right)<0$ για $x<0$ και $f''\left( 0 \right)>0$ για $x>0$. Στο ${{x}_{0}}=0$ δεν υπάρχει εφαπτομένη και επομένως το ${{x}_{0}}=0$ δεν είναι σημείο καμπής.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 12}
+ \begin{proposition}
+  \normalfont Αν η ${{C}_{f}}$ μιας συνάρτησης $f$, έχει ασύμπτωτη την ευθεία $\varepsilon $, τότε η ${{C}_{f}}$ μπορεί να τέμνει την $\varepsilon $.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    \frac{\eta \mu x}{x}, & x\ne 0 \\
+    1,                    & x=0    \\
+   \end{array} \right.$ είναι συνεχής και $\underset{x\to +\infty }{\mathop{\lim }}\,\frac{\eta \mu x}{x}=0$ και $\underset{x\to -\infty }{\mathop{\lim }}\,\frac{\eta \mu x}{x}=0$
+  άρα η ευθεία $y=0$ είναι οριζόντια ασύμπτωτη της $f$ (δηλαδή ο άξονας $x'x$). Όμως η εξίσωση $f\left( x \right)=0$ έχει άπειρες λύσεις στο $\mathbb{R}$, άρα ο άξονας $x'x$ και η ${{C}_{f}}$ έχουν άπειρα κοινά σημεία ($x=k\pi $, $k\in \mathbb{Z}$).
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 13}
+ \begin{proposition}
+  \normalfont Αντίστροφο Θ. Rolle. Αν η $f$ είναι συνεχής στο $\left[ \alpha ,\beta  \right]$, $f\left( \alpha  \right)=f\left( \beta  \right)$ και υπάρχει ${{x}_{0}}\in \left( \alpha ,\beta  \right)$ τέτοιο ώστε $f'\left( {{x}_{0}} \right)=0$, τότε η $f$ δεν είναι πάντα παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\left| {{x}^{2}}-4x \right|$ έχει $f\left( -1 \right)=f\left( 5 \right)=5$ και $f'\left( 2 \right)=0$, αλλά δεν είναι παραγωγίσιμη στο $0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 14}
+ \begin{proposition}
+  \normalfont Αν η $f$ είναι παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$, $f\left( \alpha  \right)=f\left( \beta  \right)$ και υπάρχει ${{x}_{0}}\in \left( \alpha ,\beta  \right)$ τέτοιο ώστε $f'\left( x_0 \right)=0$, τότε η $f$ δεν είναι πάντα συνεχής στο $\left[ \alpha ,\beta  \right]$.
+ \end{proposition}
+ \begin{proof}
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 15}
+ \begin{proposition}
+  \normalfont Αν η $f$ είναι συνεχής στο $\left[ \alpha ,\beta  \right]$, παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$ και υπάρχει $x_0\in \left( \alpha ,\beta  \right)$ τέτοιο ώστε $f'\left( x_0 \right)=0$, τότε δεν είναι πάντα $f\left( \alpha  \right)=f\left( \beta  \right)$.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)={{x}^{2}}$, $x\in \left[ -1,2 \right]$ είναι παραγωγίσιμη στο $\left( -1,2 \right)$, $f'\left( 0 \right)=0$, αλλά $f\left( -1 \right)\ne f\left( 2 \right)$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 16}
+ \begin{proposition}
+  \normalfont Αντίστροφο ΘΜΤ. Αν η $f$ είναι συνεχής στο $\left[ \alpha ,\beta  \right]$ και υπάρχει ${{x}_{0}}\in \left( \alpha ,\beta  \right)$ τέτοιο ώστε $f'\left( x_0 \right)=\frac{f\left( \beta  \right)-f\left( \alpha  \right)}{\beta -\alpha }$, τότε η $f$ δεν είναι πάντα παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 17}
+ \begin{proposition}
+  \normalfont Αν η $f$ είναι παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$ και υπάρχει ${{x}_{0}}\in \left( \alpha ,\beta  \right)$ τέτοιο ώστε $f'\left( x_0 \right)=\frac{f\left( \beta  \right)-f\left( \alpha  \right)}{\beta -\alpha }$, τότε η $f$ δεν είναι πάντα συνεχής στο $\left[ \alpha ,\beta  \right]$.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 18}
+ \begin{proposition}
+  \normalfont Αντίστροφο Μονοτονίας. Αν η $f$ είναι συνεχής στο $\left[ \alpha ,\beta  \right]$, παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$ και γνησίως αύξουσα στο $\left[ \alpha ,\beta  \right]$, τότε δεν είναι πάντα $f'\left( x  \right)>0$, για κάθε $x\in \left( \alpha ,\beta  \right)$.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 19}
+ \begin{proposition}
+  \normalfont Αν $f'\left( x  \right)>0$ για κάθε $x\in \left( \alpha ,\beta  \right)$ και $f$ γνησίως αύξουσα στο $\left[ \alpha ,\beta  \right]$, τότε δεν είναι πάντα η $f$ συνεχής στο $\left[ \alpha ,\beta  \right]$.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 20}
+ \begin{proposition}
+  \normalfont Αντίστροφο Θ. Fermat. Αν η $f$ είναι παραγωγίσιμη ${{x}_{0}}\in \left( \alpha ,\beta  \right)$, $f'\left( {{x}_{0}} \right)=0$, τότε η $f$ δεν είναι πάντα θέση τ. ακρότατου το ${{x}_{0}}$.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 21}
+ \begin{proposition}
+  \normalfont Αν η f έχει θέση τοπ. ακρότατου το ${{x}_{0}}$ και $f'\left( {{x}_{0}} \right)=0$, τότε το ${{x}_{0}}$ δεν είναι πάντα εσωτερικό σημείο διαστήματος.
+ \end{proposition}
+\end{frame}
+
+\begin{frame}{Πρόταση 22}
+ \begin{proposition}
+  \normalfont Αν το $x\underset{x\to xo}{\mathop{\lim }}\,\frac{f\left( x \right)}{g\left( x \right)}=\left( \frac{0}{0} \right)$ ή $\left( \frac{\pm \infty }{\pm \infty } \right)$ και υπάρχει τότε δεν υπάρχει πάντα το $\underset{x\to xo}{\mathop{\lim }}\,\frac{f'\left( x \right)}{g'\left( x \right)}$.
+ \end{proposition}
+ \begin{proof}
+  Για $f\left( x \right)={{x}^{2}}\eta \mu \frac{1}{x}$ και $g\left( x \right)=\varepsilon \varphi x$ έχουμε \[\underset{x\to 0}{\mathop{\lim }}\,\frac{{{x}^{2}}\eta \mu \frac{1}{x}}{\varepsilon \varphi x}=\left( \frac{0}{0} \right)=\underset{x\to 0}{\mathop{\lim }}\,\frac{x\eta \mu \frac{1}{x}}{\frac{\eta \mu x}{x}\frac{1}{\sigma \upsilon \nu x}}=0\], αλλά
+  \[\underset{x\to 0}{\mathop{\lim }}\,\frac{\left( {{x}^{2}}\eta \mu \frac{1}{x} \right)'}{\left( \varepsilon \varphi x \right)'}=\underset{x\to 0}{\mathop{\lim }}\,\frac{2x\text{ }\!\!\eta\!\!\text{  }\!\!\mu\!\!\text{ }\frac{1}{x}-\text{ }\!\!\sigma\!\!\text{  }\!\!\upsilon\!\!\text{  }\!\!\nu\!\!\text{ }\frac{1}{x}}{\frac{1}{\text{ }\!\!\sigma\!\!\text{  }\!\!\upsilon\!\!\text{ }{{\text{ }\!\!\nu\!\!\text{ }}^{2}}x}}=\underset{x\to 0}{\mathop{\lim }}\,\sigma \upsilon {{\nu }^{2}}x\left( 2x\text{ }\!\!\eta\!\!\text{  }\!\!\mu\!\!\text{ }\frac{1}{x}-\text{ }\!\!\sigma\!\!\text{  }\!\!\upsilon\!\!\text{  }\!\!\nu\!\!\text{ }\frac{1}{x} \right)\]
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 23}
+ \begin{proposition}
+  \normalfont Αντίστροφο Σ.Κ. Αν η $f$ είναι 2 φορές παραγωγίσιμη  και  $f'\left( {{x}_{0}} \right)=0$, τότε η $f$ δεν είναι πάντα θέση σημείου καμπής.
+ \end{proposition}
+ \begin{proof}
+  Η $f\left( x \right)={{x}^{4}}$, έχει $f'\left( {{x}_{0}} \right)=0$, αλλά το $0$ δεν είναι σημείο καμπής.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 24}
+ \begin{proposition}
+  \normalfont Αντίστροφο Κυρτότητας. Αν η $f$ είναι συνεχής στο $\left[ \alpha ,\beta  \right]$, 2 φορές παραγωγίσιμη στο $\left( \alpha ,\beta  \right)$ και κυρτή στο $\left[ \alpha ,\beta  \right]$, τότε δεν είναι $f''\left( x  \right)>0$, για κάθε $x\in \left( \alpha ,\beta  \right)$.
+ \end{proposition}
+ \begin{proof}
+  Η $f\left( x \right)={{\left( x-2 \right)}^{4}}+x$ είναι κυρτή αλλά έχει $f''\left( 2 \right)=0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 25}
+ \begin{proposition}
+  \normalfont Πρόταση 25.	Αν ${f}'(x)\ne 0$ για κάθε $x\in (\alpha ,\beta )\cup (\beta ,\gamma )$, τότε δεν είναι πάντα γνησίως αύξουσα στο  $(\alpha ,\beta )\cup (\beta ,\gamma )$
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=-\frac{1}{x}$είναι${f}'\left( x \right)=\frac{1}{{{x}^{2}}}>0$
+  για $x\in (-\infty ,0)\cup (0,+\infty )$ όμως $f\left( -1 \right)=1>f(1)=-1$
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 26}
+ \begin{proposition}
+  \normalfont Αν η $f$ είναι παραγωγίσιμη, τότε η $f'$ δεν είναι πάντα συνεχής.
+ \end{proposition}
+ \begin{proof}
+  Η συνάρτηση $f\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    {{x}^{2}}\eta \mu \frac{1}{x}, & x\ne 0 \\
+    0,                             & x=0    \\
+   \end{array} \right.$ είναι συνεχής στο $\mathbb{R}$, με παράγωγο $f'\left( x \right)=\left\{ \begin{array}{*{35}{l}}
+    2x\eta \mu \frac{1}{x}-\sigma \upsilon \nu \frac{1}{x}, & x\ne 0 \\
+    0,                                                      & x=0    \\
+   \end{array} \right.$ η οποία δεν είναι συνεχής στο $0$.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 27}
+ \begin{proposition}
+  \normalfont Αν η $f$ δεν είναι αντιστρέψιμη τότε δεν είναι «1-1».
+ \end{proposition}
+ \begin{proof}
+  Αν ήταν «1-1» τότε θα ήταν αντιστρέψιμη.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 28}
+ \begin{proposition}
+  \normalfont Αν δεν υπάρχει το όριο $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\left[ f\left( x \right)+g\left( x \right) \right]$, τότε δεν υπάρχει το $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,f\left( x \right)$ ή το $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,g\left( x \right)$.
+ \end{proposition}
+ \begin{proof}
+  Αν υπήρχαν και τα δύο, τότε τα υπήρχε και το $\underset{x\to {{x}_{0}}}{\mathop{\lim }}\,\left[ f\left( x \right)+g\left( x \right) \right]$, ΑΤΟΠΟ.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 29}
+ \begin{proposition}
+  \normalfont Αν η $g\circ f$ δεν είναι συνεχής στο ${{x}_{0}}$, τότε η $f$ δεν είναι συνεχής στο ${{x}_{0}}$ ή η $g$ δεν είναι συνεχής στο $f\left( {{x}_{0}} \right)$.
+ \end{proposition}
+ \begin{proof}
+  Αν η $f$ ήταν συνεχής στο ${{x}_{0}}$ και η $g$ ήταν συνεχής στο $f\left( {{x}_{0}} \right)$ τότε θα ήταν συνεχής και η $g\circ f$, ΑΤΟΠΟ.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 30}
+ \begin{proposition}
+  \normalfont Αν η $f$ δεν έχει ρίζα στο $\left( \alpha ,\beta  \right)$, τότε η $f$ δεν είναι συνεχής στο $\left[ \alpha ,\beta  \right]$ ή  $f\left( \alpha  \right)\cdot f\left( \beta  \right)\ge 0$
+ \end{proposition}
+ \begin{proof}
+  Αν η $f$ ήταν συνεχής στο $\left[ \alpha ,\beta  \right]$ και $f\left( \alpha  \right)\cdot f\left( \beta  \right)<0$ τότε η $f$ έχει ρίζα στο $\left( \alpha ,\beta  \right)$, ΑΤΟΠΟ.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 31}
+ \begin{proposition}
+  \normalfont Αν η $g\circ f$ δεν είναι παραγωγίσιμη στο ${{x}_{0}}$, τότε η $f$ δεν είναι πραγωγίσιμη στο ${{x}_{0}}$ ή η $g$ δεν είναι παραγωγίσιμη στο $f\left( {{x}_{0}} \right)$.
+ \end{proposition}
+ \begin{proof}
+  Αν η $f$ ήταν παραγωγίσιμη στο ${{x}_{0}}$ και η $g$ ήταν παραγωγίσιμη στο $f\left( {{x}_{0}} \right)$ τότε θα ήταν παραγωγίσιμη και η $g\circ f$ στο ${{x}_{0}}$, ΑΤΟΠΟ.
+ \end{proof}
+\end{frame}
+
+\begin{frame}{Πρόταση 32}
+ \begin{proposition}
+  \normalfont Αν η $f$ δεν είναι συνεχής στο ${{x}_{0}}$, τότε η $f$ δεν είναι πραγωγίσιμη στο ${{x}_{0}}$.
+ \end{proposition}
+ \begin{proof}
+  Αν η $f$ ήταν παραγωγίσιμη στο ${{x}_{0}}$ τότε θα ήταν και συνεχής στο ${{x}_{0}}$, ΑΤΟΠΟ.
  \end{proof}
 \end{frame}
 
